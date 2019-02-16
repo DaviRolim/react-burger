@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react'
 import Logo from '../../Logo/Logo'
+import DrawerToggle from '../SideDrawer/DrawerToggle/DrawerToggle'
 
 import NavigationItems from '../NavigationItems/NavigationItems'
 import styles from './Toolbar.module.css'
@@ -7,7 +8,7 @@ import styles from './Toolbar.module.css'
 const toolbar = (props) => (
     <Fragment>
         <header className={styles.Toolbar}>
-            <div>MENU</div>
+            <DrawerToggle clicked={props.drawerToggleClicked}/>
             <div className={styles.Logo}>
                 <Logo />
             </div>
